@@ -1,0 +1,46 @@
+body{
+    /*fijamos el color de fondo 
+     y ademas trameos la fuente familia de courier new */
+    background: #BEC5AD;
+    font-family:  'Courier New', Courier, monospace;
+}
+
+.flex-container{
+    /*aqui hacemos al div con la clase flex-container
+    display flex, asi que podemos elejir entre flex en orizontal o vertical*/
+    display: flex;
+    /* pintamos el fondo para identificarlo, ademas agregamos un paddin para que no se pegue a otro div*/
+    background: #3B5249;
+    padding: 10px;
+    /* por defecto esta en row, pero puede ser column*/
+    flex-direction: row-reverse;
+    /* tambien tenemos flex-wrap
+    que nos permite hacer diferentes filas en un mismo layout en dado caso 
+    tengamos muchos elementos que no quepan en un solo row*/
+    flex-wrap: wrap;
+    /* podemos utilizar una sentencia mas cencilla que es flex-flow*/
+    /*flex-flow: row wrap ;   que hace exactamente lo mismo*/
+    /*le decimos que nuestro contenedor solo abarque el 80% del row*/
+    width: 80%;
+    margin: 0 auto;
+    /*para centrar los elementos dentro del flex container*/
+    justify-content: center;/* continen muchas opciones para colocarlos dentro*/
+    align-items: center; /*con esto centramos los elementos dontro de nuestro div*/
+}
+
+.caja{
+    /* pintamos un border de un pixel de ancho y solido o completo*/
+    border: 1px solid #A4B494;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    width: 120px;
+    height: 120px;
+    line-height: 20px;
+    text-align: center;
+    /* margin da ese margen entre cada elemento*/
+    margin: 20px;
+    /* implementacion de flex-box 
+    como nueva manera de colocar en la pagina elemntos*/
+
+}
